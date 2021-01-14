@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>MyWebApp</title>
@@ -8,5 +8,8 @@
     <p>Hello!</p>
 
     <a href="/goodbye">Say goodbye!</a> or <a href="/exit">to Exit</a>
+
+    <p th:text="${message}"/>
+
 </body>
 </html>
